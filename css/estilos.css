@@ -1,0 +1,409 @@
+body {
+  margin: 2px;
+  background-color: #02010a;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  display: inline-block;
+}
+
+header {
+  color: white;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  -moz-border-raduis: 10px 10px 0 0;
+  -webkit-border-raduis: 10px 10px 0 0;
+  animation-name: slidein-header;
+  animation-duration: 1s;
+}
+
+header > h1 {
+  padding-top: 20px;
+  margin: 0;
+  display: block;
+  filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+footer {
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+}
+
+footer h1 {
+  color: black;
+  font-size: 1.5em;
+}
+
+a {
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+p {
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  margin: 12px;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  margin: 10px;
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: white;
+}
+
+article {
+  text-align: center;
+}
+
+article > img {
+  margin: 20px;
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+.imagen_secundaria {
+  width: 100%;
+  display: inline-block;
+}
+
+/* Tamaño de los articulos de imagenes secundarias */
+.imagen_secundaria article {
+  width: 100%;
+  display: inline-block;
+}
+
+/* Tamaño y apariencia de imagenes secundarias */
+.imagen_secundaria [id^="imagen_"] img {
+  width: 80%;
+  border: 1px solid;
+  margin-bottom: 0;
+}
+
+#imagen1 {
+  width: 100%;
+}
+
+#imagen2 {
+  width: 100%;
+}
+
+#imagen3 {
+  width: 100%;
+}
+
+#imagen4 {
+  width: 100%;
+}
+
+#imagen5 {
+  width: 100%;
+}
+
+#imagen6 {
+  width: 100%;
+}
+
+#wrapper section article img {
+  width: 80%;
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+#wrapper article, .imagen_secundaria article {
+  background-color: #d5c75f;
+}
+
+/* Tamaño de los articulos en el Footer en Porcentaje*/
+.footer {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer h1 {
+  text-align: left;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.footer > p {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.active_menu a {
+  text-decoration: none;
+}
+
+#menu {
+  float: none;
+  text-align: center;
+  margin: 0 10px 0 0;
+  display: block;
+}
+
+#menu a:active {
+  text-decoration: none;
+}
+
+#contenido {
+  width:100%;
+}
+
+#imagen_central {
+  background-color: #82c3a6;
+  width: 100%;
+}
+
+#imagen_central img {
+  width: 70%;
+}
+
+#facebook {
+  text-align: left;
+  margin-left: 10px;
+}
+
+#facebook p img {
+  margin-right: 10px;
+}
+
+#facebook p {
+  display: block;
+ }
+
+#derechos  {
+   padding-bottom: 30px;
+ }
+
+/* Sombra en Imagenes Secundarias al pasar el mouse */
+#imagen_izquierda img:hover, #imagen_derecha img:hover {
+  filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+
+/* Efectos en Imagen Izquierda al pasar el mouse */
+#imagen_izquierda img:hover {
+  transform: rotate(10deg);
+  border: 2px solid;
+}
+
+/* Efectos en Imagen Derecha al pasar el mouse */
+#imagen_derecha img:hover {
+  transform: translate(20px, -5px);
+}
+
+/* Efecto en las imágenes de la galería Paisajes y Retratos */
+.imagen_blur img {
+  filter: blur(10px);
+}
+
+.imagenes_gray img {
+  filter: grayscale(100%);
+}
+
+.imagen_sepia img {
+  filter: sepia(90%);
+}
+
+/* Media querys */
+@media screen and (min-width: 767px and max-width: 800px) {
+   a {
+     font-size: 1.5em;
+   }
+}
+
+@media screen and (min-width: 801px and max-width: 900px) {
+   a {
+     font-size: 1.7em;
+   }
+}
+
+@media screen and (min-width: 767px) {
+  a {
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  h1 {
+    margin-left: 15px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  header > h1 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-top: 0;
+    display: inline-block;
+    filter: drop-shadow(2px 2px 2px #02010a);
+  }
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    margin: 10px;
+    list-style: none;
+    display: inline-block;
+  }
+
+  footer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+  #contenido
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+  #menu {
+    float: right;
+    margin: 0 10px 0 0;
+  }
+
+  #facebook p {
+    display: inline-block;
+   }
+
+  .imagen_secundaria {
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-flow: row wrap;
+     flex-flow: row wrap;
+   }
+
+  /* Tamaño de los articulos de imagenes secundarias */
+   .imagen_secundaria article {
+     width: 50%;
+   }
+
+   .imagen_secundaria article img {
+     width: 100%;
+   }
+
+  #wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+  #wrapper section  {
+    width: 100%;
+    margin: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+   #imagen1 {
+     width: 33.3%;
+   }
+
+   #imagen2 {
+     width: 33.3%;
+   }
+
+   #imagen3 {
+     width: 33.3%;
+   }
+
+   #imagen4 {
+     width: 33.3%;
+   }
+
+   #imagen5 {
+     width: 33.3%;
+   }
+
+   #imagen6 {
+     width: 33.3%;
+   }
+
+   #footer {
+    display: flex;
+   }
+  /* Tamaño de los articulos en el Footer en Porcentaje */
+  .footer {
+    width: 25%;
+    display: inline-block;
+  }
+
+}
+
+@media screen and (min-width: 901px) {
+  a {
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    display: block;
+  }
+	#contenido
+	{
+    width:900px;
+  	margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 767px and max-width: 900px) {
+  #contenido
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+/*::::::: Keyframnes :::::: */
+
+@keyframes slidein-header {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%
+  }
+}
+
+@-webkit-keyframes slidein-header {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%
+  }
+}
